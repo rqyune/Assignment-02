@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="Home Page.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kodchasan:wght@400;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body> 
+
+<header>
+    <img src="credit card logo.png" alt="Credit Card Icon" class="icon">
+    <div class="icon-title">Credit Basics</div>
+
+    <!-- Hamburger nav-->
+     <button class="hamburger" id="hamburger"></button>
+    <!-- nav links-->
+    <nav id="navLinks">
+        <a href="Home Page.html" class="nav-link">Credit 101</a>
+        <a href="Sub Page.html" class="nav-link">Financial Literacy</a>
+        <a href="Form Page.html" class="nav-link">Apply for a Credit Card</a>
+    </nav>
+
+</header>
+
+<div class="banner">
+    <img src="credit basics banner.png" alt="Credit Basics Banner"> <!-- Help from Copilot -->
+    <h3>So, you just turned 18 and you're wondering...</h3>
+    <h4>How Does Credit <br> Actually Work?</h4>
+</div>
+
+    <main>
+    <h1>Credit 101</h1>
+    
+    <ul class="cards">
+        <li class="card">
+            <h2>Wait, What Even is Credit?</h2>
+            <p>Think of it like this: credit is basically your financial reputation score. It's a number (300-850) that tells lenders 'hey, this person is good at paying back money. Start building it early, and you'll thank yourself later when you want to rent an apartment or buy a car.</p>
+        </li>
+        
+        <li class="card">
+            <h2>Credit Score</h2>
+            <p>Your score goes up when you pay on time and keep your balance low (under 30% of your limit is ideal). It goes down when you miss payments or max out your card. Simple as that.</p>
+        </li>
+
+        <li class="card">
+            <h2>Billing Cycle</h2>
+            <p>Here's the deal: you get a billing cycle (usually 30 days) to make purchases. Then you get a statement with everything you spent. Pay it off in full before the due date? Zero interest. That's the magic move right there.</p>
+        </li>
+
+        <li class="card">
+            <h2>Safety and Perks</h2>
+            <p>Real talk: credit cards are actually safer than debit cards. If someone steals your info, it's the bank's money at risk, not yours. Plus you get rewards, purchase protection, and you're building that all-important credit score.</p>
+        </li>
+    </ul>
+
+    <ul class="cards2">
+        <li class="card2">
+            <h5>Lorem ipsum dolor sit amet </h5>
+            <p2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br><br> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. <br><br> Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p2>
+        </li>
+
+        <li class="cards">
+            <img src="credit card.avif" alt="Credit Card Image">
+        </li>
+
+
+        <details>
+    <summary>Click here for info about Credit Basics</summary>
+        <li class="cards3">
+            <li class="card3">
+            <h5>About Credit Basics</h5>
+            <p2>Pernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. <br> Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora <br><br>incidunt ut labore et dolore magnam <br> aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum <br><br> exercitationem ullam corporis suscipit laboriosam,nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit <br> esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p2>
+        </li>
+        </li>
+    </ul>
+</details> <!-- Help from Copilot -->
+
+  </main>
+<script>
+const hamburger = document.getElementById("hamburger");
+const navLinks = document.getElementById("navLinks");
+const links = document.querySelectorAll(".nav-link");
+
+hamburger.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+});
+
+links.forEach(link => {
+    link.addEventListener("click", () => {
+        navLinks.classList.remove("active");
+    });
+});
+</script>
+
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Go to top</button>
+</body>
+<footer>
+      <p>&copy; 2026 CreditBasics</p>
+    </footer>
+    </html>

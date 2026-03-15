@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="Form Page.css">
+<link href="https://fonts.googleapis.com/css2?family=Kodchasan:wght@400;700&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<header>
+    <img src="credit card logo.png" alt="Credit Card Icon" class="icon">
+    <div class="icon-title">Credit Basics</div>
+    <nav>
+        <a href="Home Page.html">Credit 101</a>
+        <a href="Sub Page.html">Financial Literacy</a>
+        <a href="Form Page.html">Apply for a Credit Card</a>
+    </nav>
+</header>
+
+<div class="banner">
+<h1>Apply Now</h1>
+</div>
+
+<main>
+    <p><br><br><br></p>
+<div class="form-flex-container">
+    <h2>Ready to Build Your Credit?</h2>
+    <p>Fill out the form below to apply for your first credit card and start building your financial future today!</p>
+    <form action="#" method="post">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="income">Annual Income:</label>
+        <input type="number" id="income" name="income" required>
+
+        <button type="submit">Apply Now</button>
+
+        <p id="successMessage">Application submitted successfully!</p> <!-- Help from Copilot -->
+
+    </form>
+    </div>
+
+<p><br><br><br></p>
+</main>  
+
+<footer>
+    <p>&copy; 2026 CreditBasics</p>
+    </footer>
+
+    <script>
+
+    const form = document.getElementById("creditform");
+
+    const nameInput = document.getElementById("name");
+    const emailInput = document.getElementById("email");
+    const incomeInput = document.getElementById("income");
+
+    const nameError = document.getElementById("nameError");
+    const emailError = document.getElementById("emailError");
+    const incomeError = document.getElementById("incomeError");
+
+    const successMessage = document.getElementById("successMessage");
+
+    function validateEmail(email) {
+        const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; <!-- Help from Copilot -->
+        return re.test(email);
+    }
+
+    form.addEventListener("submit", function(event) {
+
+        let valid = true;
+
+        nameError.textContent = "";
+        emailError.textContent = "";
+        incomeError.textContent = "";
+        successMessage.textContent = "";
+
+        if (nameInput.value.trim() === "") {
+            nameError.textContent = "Please enter your full name.";
+            valid = false;
+        }
+        
+        if (validateEmail(emailInput.value)){
+            emailError.textContent = "Please enter a valid email address.";
+            valid = false;
+        }
+
+        if (incomeInput.value === "" || incomeInput.value <= 0) {
+            incomeError.textContent = "Please enter a valid annual income.";
+            valid = false;
+        }
+
+        if (valid) {
+            successMessage.textContent = "Application submitted successfully!";
+        }
+
+        else {
+            event.preventDefault();
+        }
+
+    });
+
+    nameInput.addEventListener("input", () => nameError.textContent = "");
+    emailInput.addEventListener("input", () => emailError.textContent = "");
+    incomeInput.addEventListener("input", () => incomeError.textContent = "");
+    </script>
+
+    </body>
+    </html>

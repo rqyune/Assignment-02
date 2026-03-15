@@ -6,7 +6,7 @@
 
 h1 {
     font-family: 'Kodchasan', sans-serif;
-    font-size: 36px;
+    font-size: 30px;
     text-align: center;
     color: white;
     
@@ -14,33 +14,13 @@ h1 {
 
 h2 {
     font-family: 'Kodchasan', sans-serif;
-    font-size: 28px;
+    font-size: 32px;
 }
 
-h3 {
-    font-family: 'Kodchasan', sans-serif;
-    font-size: 18px;
-    position: relative;
-    text-align: center;
-
-}
 .icon-title {
     font-size: 28px;
     font-weight: bold;
     font-family: 'Kodchasan', sans-serif;
-}
-
-.banner { /* Help from Copilot */
-    width: 100%;
-    height: 300px;
-    overflow: hidden;
-    margin-top: 0px;
-}
-
-.banner img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
 }
 
 header {
@@ -53,6 +33,7 @@ header {
 }
 
 header nav {
+ font-family: 'Kodchasan', sans-serif;
  display: flex;
  justify-content: center;
  margin-left: auto;
@@ -81,68 +62,55 @@ body {
 
 main {
   background-color: #222222;
+  padding: 20px;
+  
 }
 
 .banner {
+    background-color: #8E81FF;
     position: relative;
     width: 100%;
-    height: 300px;
+    height: 200px;
     overflow: hidden;
     margin-top: 0px;
 }
-
-.banner img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-}
-
-.banner h3 {
+    
+  .banner h1 {
     position: absolute;
-    top: 8%;
-    left: 10%;
-    color: white;
-    font-size: 24px;
-    text-align: left;
+    top: 25%;
+    left: 43%;
+    color: #222222;
+    font-size: 45px;
+    text-align: center;
+    line-height: 1.4;
     font-family: 'Kodchasan', sans-serif;
-}
-/* Flexbox container for cards/sections */
-.cards {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    margin: 30px ;
-    padding: 10px 10px;
-    list-style: none;
-}
+  }
 
-.card {
-    flex: 1;
-    min-width: 250px;
+.form-flex-container {
+    background-color: #333333;
     padding: 20px;
-    border-radius: 8px;
-    background-color: #1553E8;
-    border-radius: 12px;
-    overflow: hidden;
-}
-
-/* Flexbox container for grid layout */
-.flex-container {
+    border-radius: 5px;
+    max-height: 1000px;
+    margin: 20px auto;
+    text-align: center;
     display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: stretch;
+    flex-direction: column;
+    gap: 0px; 
+    width: 50%;
+    font-size: 18px;
 }
 
-.flex-item {
-    flex: 1;
-    min-width: 200px;
-    padding: 20px;
-    background-color: #f0f0f0;
-    border-radius: 12px;
-    overflow: hidden;
+.error{
+color:red;
+font-size:14px;
+display:block;
+margin-bottom:10px;
+}
+
+#successMessage{
+color:green;
+font-weight:bold;
+margin-top:15px;
 }
 
 footer {
