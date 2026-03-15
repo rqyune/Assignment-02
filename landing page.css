@@ -1,0 +1,154 @@
+.icon {
+    width: 50px; /* Smaller icon size */
+    height: 50px;
+    object-fit: contain;
+}
+
+h1 {
+    font-family: 'Kodchasan', sans-serif;
+    font-size: 36px;
+    text-align: center;
+    color: white;
+    
+}
+
+h2 {
+    font-family: 'Kodchasan', sans-serif;
+    font-size: 28px;
+}
+
+h3 {
+    font-family: 'Kodchasan', sans-serif;
+    font-size: 18px;
+    position: relative;
+    text-align: center;
+
+}
+.icon-title {
+    font-size: 28px;
+    font-weight: bold;
+    font-family: 'Kodchasan', sans-serif;
+}
+
+.banner { /* Help from Copilot */
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    margin-top: 0px;
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+header {
+  background-color: black;
+  color: white;
+  padding: 20px 30px;
+  display: flex;
+  align-items: center;
+  gap: 10px
+}
+
+header nav {
+ display: flex;
+ justify-content: center;
+ margin-left: auto;
+  gap: 20px;
+}
+
+header nav a {
+  color: white;
+  text-decoration: none;
+  padding: 0px 20px;
+}
+
+header nav a:hover {
+  color: #a0aec0;
+  text-decoration:underline
+}
+
+body {
+  color: rgb(255, 255, 255);
+  margin: 0;
+  font-family: 'Iter', Sans-Serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  background-color: #222222;
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    margin-top: 0px;
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.banner h3 {
+    position: absolute;
+    top: 8%;
+    left: 10%;
+    color: white;
+    font-size: 24px;
+    text-align: left;
+    font-family: 'Kodchasan', sans-serif;
+}
+/* Flexbox container for cards/sections */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin: 30px ;
+    padding: 10px 10px;
+    list-style: none;
+}
+
+.card {
+    flex: 1;
+    min-width: 250px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #1553E8;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+/* Flexbox container for grid layout */
+.flex-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.flex-item {
+    flex: 1;
+    min-width: 200px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+footer {
+  background-color: #121212;
+  font-family: 'Kodchasan', sans-serif;
+  color: #4E4E4E;
+  padding: 30px 30px;
+  text-align: center;
+}
